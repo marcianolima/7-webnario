@@ -33,6 +33,7 @@
   }
   Reveal.initialize({
     width: 1600, height: 900, margin: 0, minScale: 0.12, maxScale: 1.6,
+    scrollActivationWidth: 800, scrollProgress: 'auto',
     controls: true, controlsLayout: 'bottom-right', progress: true,
     slideNumber: 'c/t', hash: true,
     center: false, navigationMode: 'default', keyboard: true, touch: true,
