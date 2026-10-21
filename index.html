@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#091827">
+<meta name="description" content="GeoCanoas — geoinformação e inteligência urbana, 7º Webinário Governo Digital.">
+<title>GeoCanoas | Governo Digital 2026</title>
+<link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.css">
+<link rel="stylesheet" href="./css/theme.css"><link rel="stylesheet" href="./css/custom.css">
+<script defer src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/plugin/notes/notes.js"></script>
+<script defer src="./js/config.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Ir à apresentação</a>
+<header class="topbar">
+ <a class="brand" href="#/0" aria-label="Voltar à capa"><span class="brand-icon" aria-hidden="true">◈</span><span>geo<b>canoas</b><small>INTELIGÊNCIA TERRITORIAL</small></span></a>
+ <div class="toolbar"><span class="edition">7º WEBINÁRIO · 21 OUT 2026</span><button id="theme-toggle" type="button" class="tool" aria-label="Alternar tema claro ou escuro" title="Alternar tema (T)">◐ <span>Tema</span></button><a class="tool" href="?print-pdf" aria-label="Preparar impressão em PDF" title="Exportar PDF">↓ <span>PDF</span></a></div>
+</header>
+<main class="reveal" id="main"><div class="slides">
+<!-- SLIDE 1: CAPA -->
+<section class="page hero" data-background-color="#091827">
+ <div class="hero-copy"><div class="eyebrow"><i></i>7º WEBINÁRIO GOVERNO DIGITAL / 2026</div>
+ <h1>O território<br>se torna <em>inteligência.</em></h1>
+ <p>GeoCanoas — da base cartográfica às decisões públicas.</p>
+ <div class="speaker"><span></span><div><b>Marciano da Costa Lima</b><small>Engenheiro Cartógrafo · Diretoria do GeoCanoas / SMDU</small></div></div></div>
+ <figure class="hero-image"><img src="./assets/images/mapa-territorio.svg" alt="Ilustração conceitual de uma infraestrutura cartográfica urbana" fetchpriority="high"><figcaption>GEOCANOAS / CANOAS · RS</figcaption></figure>
+ <aside class="notes">Abertura. Apresente-se e destaque que GeoCanoas envolve estrutura de dados e serviços, não apenas mapas. O mapa de fundo é ilustrativo, não a base oficial.</aside>
+</section>
+<!-- SLIDE 2: CONTEXTO -->
+<section class="page context">
+ <div class="overline">01 / CONTEXTO <span>CANOAS · RS</span></div>
+ <div class="split-heading"><h2>Um território.<br><em>Múltiplas decisões.</em></h2><p>Planejamento, infraestrutura e riscos compartilham uma mesma questão: <b>onde</b> as coisas acontecem.</p></div>
+ <div class="context-bottom"><img data-src="./assets/images/mapa-territorio.svg" alt="Representação cartográfica conceitual de infraestrutura territorial" loading="lazy"><div class="metric-list"><div class="metric fragment fade-up"><b>01</b><span><strong>Território</strong><small>Referência comum</small></span></div><div class="metric fragment fade-up"><b>02</b><span><strong>Informação</strong><small>Integração setorial</small></span></div><div class="metric fragment fade-up"><b>03</b><span><strong>Decisão</strong><small>Aplicações concretas</small></span></div></div></div>
+ <aside class="notes">Contextualizar Canoas, Região Metropolitana e desafios de planejamento. Não utilizar a imagem ilustrativa para localização oficial de bairros ou infraestrutura.</aside>
+</section>
+<!-- SLIDE 3: PROCESSO -->
+<section class="page process">
+ <div class="overline">02 / INFRAESTRUTURA <span>DA BASE AO SERVIÇO</span></div>
+ <h2>O mapa é a interface.<br><em>A inteligência está na integração.</em></h2>
+ <div class="steps"><article class="fragment fade-up"><label>01</label><b>Fontes</b><small>Cadastros e levantamentos</small></article><span>→</span><article class="fragment fade-up"><label>02</label><b>Qualidade</b><small>Padronização e revisão</small></article><span>→</span><article class="fragment fade-up"><label>03</label><b>Serviços</b><small>Camadas e APIs REST</small></article><span>→</span><article class="fragment fade-up"><label>04</label><b>Aplicações</b><small>Consulta e análise</small></article></div>
+ <div class="infobar">ORACLE <i></i> ARCGIS ENTERPRISE <i></i> SERVIÇOS REST <i></i> WEBGIS</div>
+ <aside class="notes">Mostrar a arquitetura lógica da produção até o acesso. O ambiente real usa Oracle, ArcGIS Enterprise 10.7.1 e aplicações web; os servidores específicos são omitidos aqui.</aside>
+</section>
+<!-- SLIDE 4: MAPA GRANDE + AUTO-ANIMATE -->
+<section class="page map-slide" data-auto-animate data-auto-animate-id="urbanismo">
+ <div class="overline">03 / BASE CARTOGRÁFICA <span>CASO 01</span></div>
+ <div class="map-header"><h2 data-id="urban-title">O cadastro conecta<br><em>território e informação.</em></h2><p>Lotes, quadras, edificações e identificadores em uma mesma referência.</p></div>
+ <div class="map-layout"><figure class="map-main" data-id="urban-map"><img data-src="./assets/images/mapa-cadastro.svg" loading="lazy" alt="Mapa cadastral ilustrativo de lotes, quadras e ruas"><figcaption>GEOMETRIA / LOTES / QUADRAS</figcaption></figure><div class="map-side"><strong>Uma geometria confiável</strong><p>permite integrar sistemas que antes não conversavam.</p><a href="https://geo.canoas.rs.gov.br/portal/home" target="_blank" rel="noopener noreferrer">Explorar o Geoportal ↗</a></div></div>
+ <aside class="notes">Explicar identificadores e o vínculo entre lote e informação. Preservar competências tributárias e sigilo fiscal. Substituir SVG por captura real antes da versão definitiva.</aside>
+</section>
+<!-- SLIDE 5: COMPARAÇÃO -->
+<section class="page compare-slide" data-auto-animate data-auto-animate-id="urbanismo">
+ <div class="overline">04 / VIABILIDADE URBANÍSTICA <span>CASO 01</span></div>
+ <h2 data-id="urban-title">Geometria e regras<br><em>produzem uma consulta inteligível.</em></h2>
+ <div class="compare-grid"><figure data-id="urban-map"><img data-src="./assets/images/mapa-cadastro.svg" loading="lazy" alt="Mapa esquemático dos lotes"><figcaption><b>01 · Localizar o lote</b><small>Base territorial</small></figcaption></figure><figure><img data-src="./assets/images/mapa-zoneamento.svg" loading="lazy" alt="Mapa esquemático de zoneamento"><figcaption><b>02 · Aplicar parâmetros</b><small>PDUA, zonas e interseções</small></figcaption></figure></div>
+ <p class="subnote">RESULTADO <span>Menos consultas fragmentadas, mais clareza para cidadãos e técnicos.</span></p>
+ <aside class="notes">Descrever consulta de viabilidade: geometria do lote, interseção com zoneamento e aplicação dos parâmetros. Não confundir consulta informativa com aprovação formal.</aside>
+</section>
+<!-- SLIDE 6: RISCO -->
+<section class="page risk-slide" data-background-color="#091827">
+ <div class="overline">05 / ANÁLISE TERRITORIAL <span>CASO 02 · ENCHENTE 2024</span></div>
+ <h2>Informação territorial transforma<br><em>eventos em aprendizado.</em></h2><p class="intro">Cartografia, altimetria e cadastro apoiam análises de exposição e planejamento.</p>
+ <div class="risk-layout"><figure><img data-src="./assets/images/mapa-inundacao.svg" loading="lazy" alt="Ilustração de inundação hipotética, não representa a cheia real de 2024"><figcaption>ILUSTRAÇÃO CONCEITUAL · NÃO É MANCHA OBSERVADA</figcaption></figure><div class="risk-cards"><div><b>01</b><span><strong>Caracterizar</strong><small>Áreas e elementos expostos</small></span></div><div><b>02</b><span><strong>Relacionar</strong><small>Cadastros e altimetria</small></span></div><div><b>03</b><span><strong>Planejar</strong><small>Estudos e prioridades</small></span></div><p>Evento observado ≠ cenário modelado ≠ restrição normativa.</p></div></div>
+ <aside class="notes">Mencionar levantamentos, estudos de inundação e o evento de maio de 2024. Não usar o gráfico ilustrativo para medições ou decisões.</aside>
+</section>
+<!-- SLIDE 7: GALERIA -->
+<section class="page gallery-slide">
+ <div class="overline">06 / APLICAÇÕES <span>MAPAS E SERVIÇOS</span></div>
+ <h2>Uma infraestrutura.<br><em>Múltiplas políticas públicas.</em></h2>
+ <div class="gallery"><a href="https://geo.canoas.rs.gov.br/portal/home" target="_blank" rel="noopener noreferrer"><img data-src="./assets/images/mapa-cadastro.svg" loading="lazy" alt="Ilustração cadastral"><strong>Cadastro</strong><small>Base territorial ↗</small></a><a href="https://geo.canoas.rs.gov.br/portal/home" target="_blank" rel="noopener noreferrer"><img data-src="./assets/images/mapa-zoneamento.svg" loading="lazy" alt="Ilustração de zoneamento"><strong>Urbanismo</strong><small>Regras e viabilidade ↗</small></a><a href="https://geo.canoas.rs.gov.br/portal/home" target="_blank" rel="noopener noreferrer"><img data-src="./assets/images/mapa-inundacao.svg" loading="lazy" alt="Ilustração de áreas de inundação"><strong>Defesa Civil</strong><small>Análise territorial ↗</small></a><a href="https://geo.canoas.rs.gov.br/portal/home" target="_blank" rel="noopener noreferrer"><img data-src="./assets/images/mapa-indicadores.svg" loading="lazy" alt="Ilustração de indicadores espaciais"><strong>Indicadores</strong><small>Políticas setoriais ↗</small></a></div>
+ <p class="footnote">Imagens conceituais locais. Substituir por mapas e capturas reais otimizados em WebP durante a evolução do material.</p>
+ <aside class="notes">Abrir casos diversos: mapa cadastral, urbanismo, defesa civil, saúde e Censo. Futuras capturas reais do GeoCanoas substituem estas imagens.</aside>
+</section>
+<!-- SLIDE 8: INTEGRAÇÃO -->
+<section class="page integration-slide">
+ <div class="overline">07 / INTEGRAÇÃO <span>ROTINAS E SISTEMAS</span></div>
+ <h2>O geoprocessamento opera<br><em>também nos bastidores.</em></h2>
+ <div class="integration-layout"><div><p>Processos administrativos, códigos cadastrais e coordenadas podem alimentar camadas territoriais.</p><div class="tags"><span>PROCESSOS</span><span>SQL / LOTE</span><span>LAT / LONG</span><span>API</span></div></div><div class="vertical-flow"><article class="fragment fade-up"><b>01</b><span><strong>Coletar</strong><small>Dados administrativos</small></span></article><article class="fragment fade-up"><b>02</b><span><strong>Vincular</strong><small>Coordenadas ou código do lote</small></span></article><article class="fragment fade-up"><b>03</b><span><strong>Publicar</strong><small>Camadas geográficas atualizadas</small></span></article></div></div>
+ <aside class="notes">Apresentar exemplo de integração diária de processos por API, com parsing de informações espaciais e vinculação pelo SQL do lote. Parte dos registros ainda exige conferência.</aside>
+</section>
+<!-- SLIDE 9: GOVERNANÇA -->
+<section class="page governance-slide">
+ <div class="overline">08 / GOVERNANÇA <span>RESPONSABILIDADES</span></div>
+ <h2>Sem governança, informação<br><em>não se torna confiança.</em></h2>
+ <div class="governance-grid"><article><span>01</span><strong>Quem produz</strong><p>As áreas setoriais mantêm a responsabilidade sobre os dados de origem.</p></article><article><span>02</span><strong>Quem integra</strong><p>O GeoCanoas coordena padrões, qualidade e publicação geoespacial.</p></article><article><span>03</span><strong>Quem acessa</strong><p>Perfis, segurança, LGPD e preservação de sigilo fiscal.</p></article></div>
+ <div class="governance-note"><b>PRÓXIMA ETAPA</b> <span>Proposta de Lei GeoCanoas e IDE Municipal — em discussão, não lei vigente.</span></div>
+ <aside class="notes">Introduzir a minuta de lei, cartografia oficial, metadados, responsabilidade intersetorial e salvaguardas. Destacar que não retira competência da Secretaria da Fazenda.</aside>
+</section>
+<!-- SLIDE 10: CONCLUSÃO -->
+<section class="page final-slide" data-background-color="#091827">
+ <div class="eyebrow">GEOCANOAS · GOVERNO DIGITAL</div><h2>O mapa é o começo.<br><em>Não o fim.</em></h2>
+ <p>Dados confiáveis, integração e governança tornam a informação territorial útil à decisão.</p>
+ <div class="final-links"><a href="https://geo.canoas.rs.gov.br/portal/home" target="_blank" rel="noopener noreferrer">Geoportal ↗</a><a href="https://github.com/marcianolima/7-webnario" target="_blank" rel="noopener noreferrer">Código da apresentação ↗</a></div>
+ <div class="final-signature">Marciano da Costa Lima · Diretoria do GeoCanoas / SMDU</div>
+ <aside class="notes">Agradecer. A versão de 10 slides é a base para expandirmos para os 40 minutos e incorporar capturas oficiais.</aside>
+</section>
+</div></main>
+<footer class="footer"><span>GEOCANOAS <i>/</i> CANOAS · RS</span><span class="help"><kbd>←</kbd><kbd>→</kbd> navegar · <kbd>F</kbd> tela cheia · <kbd>S</kbd> notas · <kbd>Esc</kbd> overview</span><span>GOVERNO DIGITAL <b>●</b> 2026</span></footer>
+<noscript>Ative JavaScript para navegar na apresentação.</noscript>
+</body></html>
