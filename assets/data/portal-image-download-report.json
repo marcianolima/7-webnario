@@ -1,0 +1,72 @@
+[
+  {
+    "name": "mapa-cadastral",
+    "status": "downloaded",
+    "file": "assets/images/portal/mapa-cadastral.webp",
+    "source": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/AplicacoesDestaque/aplicacao_destaque.webp",
+    "details": "HTTP 200, image/webp, 1917x894, 451278 bytes"
+  },
+  {
+    "name": "consulta-viabilidade",
+    "status": "downloaded",
+    "file": "assets/images/portal/consulta-viabilidade.webp",
+    "source": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/AplicacoesDestaque/aplicacao_destaque4.webp",
+    "details": "HTTP 200, image/webp, 1908x891, 452818 bytes"
+  },
+  {
+    "name": "rede-topografica",
+    "status": "downloaded",
+    "file": "assets/images/portal/rede-topografica.webp",
+    "source": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/DesUrbano/aplicacao_desenurbano4.webp",
+    "details": "HTTP 200, image/webp, 1918x954, 157866 bytes"
+  },
+  {
+    "name": "pontos-risco",
+    "status": "downloaded",
+    "file": "assets/images/portal/pontos-risco.webp",
+    "source": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/DefCivil/aplicacao_defcivil1.webp",
+    "details": "HTTP 200, image/webp, 1653x919, 438078 bytes"
+  },
+  {
+    "name": "inundacao-canoas",
+    "status": "downloaded",
+    "file": "assets/images/portal/inundacao-canoas.webp",
+    "source": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/DefCivil/aplicacao_defcivil3.webp",
+    "details": "HTTP 200, image/webp, 1904x942, 531706 bytes"
+  },
+  {
+    "name": "pluviometros-linigrafo",
+    "status": "downloaded",
+    "file": "assets/images/portal/pluviometros-linigrafo.webp",
+    "source": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/DefCivil/aplicacao_defcivil2.webp",
+    "details": "HTTP 200, image/webp, 1713x786, 295296 bytes"
+  },
+  {
+    "name": "minha-unidade-saude",
+    "status": "downloaded",
+    "file": "assets/images/portal/minha-unidade-saude.webp",
+    "source": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/Saude/aplicacao_saude1.webp",
+    "details": "HTTP 200, image/webp, 1920x945, 411434 bytes"
+  },
+  {
+    "name": "redes-ensino",
+    "status": "downloaded",
+    "file": "assets/images/portal/redes-ensino.webp",
+    "source": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/Educacao/aplicacao_educacao1.webp",
+    "details": "HTTP 200, image/webp, 1918x946, 494744 bytes"
+  },
+  {
+    "name": "ecopontos",
+    "status": "downloaded",
+    "file": "assets/images/portal/ecopontos.webp",
+    "source": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/MeioAmbiente/aplicacao_meioambiente4.webp",
+    "details": "HTTP 200, image/webp, 1919x951, 357138 bytes"
+  },
+  {
+    "name": "cameras-monitoramento",
+    "status": "downloaded",
+    "file": "assets/images/portal/cameras-monitoramento.webp",
+    "source": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/SegurancaPublica/aplicacao_seguranca1.webp",
+    "details": "HTTP 200, image/webp, 1713x926, 373802 bytes"
+  }
+]
