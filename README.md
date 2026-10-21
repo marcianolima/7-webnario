@@ -16,7 +16,7 @@ A apresentação foi reorganizada em **33 slides**, planejados para aproximadame
 - Casos reais **divulgados pelo portal municipal**: Mapa Cadastral, Topográfico, Zoneamento Urbano, Consulta de Viabilidade e Informativo Prévio.
 - Defesa Civil: Pontos de Riscos, Inundação em Canoas e Pluviômetros/Linígrafo.
 - Gestão setorial: Minha Unidade de Saúde, Redes de Ensino Escolar, Ecopontos e equipamentos de segurança.
-- **13 capturas reais enviadas para este webinar**, incorporadas em arquivos WebP locais: mapa cadastral (16/10/2026), PDUA/zoneamento, aplicativo e PDF de Informativo de Lote, comparador temporal 1973–2018, estudo de perigo hidráulico com dados AquaProjetos, bacias hidrográficas, projetos em andamento, dois dashboards de empreendimentos, dashboard do Censo 2022 e mapas de domicílios particulares e coletivos.
+- **13 capturas reais enviadas para este webinar**, incorporadas em arquivos locais (PNG, JPEG e WebP, conforme a melhor versão disponível): mapa cadastral (16/10/2026), PDUA/zoneamento, aplicativo e PDF de Informativo de Lote, comparador temporal 1973–2018, estudo de perigo hidráulico com dados AquaProjetos, bacias hidrográficas, projetos em andamento, dois dashboards de empreendimentos, dashboard do Censo 2022 e mapas de domicílios particulares e coletivos.
 - Exemplo ilustrativo de **endereçamento ambíguo — “Rua 2”**: divergências entre nome oficial, uso local e provedores externos, reforçando a necessidade de padronização.
 - Histórico de imagens, indicadores, processos administrativos, transparência, governança e proposta de Lei GeoCanoas.
 - Encerramento com acesso ao portal municipal, repositório e página de projetos.
@@ -26,13 +26,17 @@ A apresentação foi reorganizada em **33 slides**, planejados para aproximadame
 1. **Portal GeoCanoas:** https://sistemas.canoas.rs.gov.br/geo/portal/ — seu conteúdo foi consultado e os indicadores, imagens e exemplos foram selecionados conforme a página.
 2. **Projetos GeoCanoas:** https://sistemas.canoas.rs.gov.br/geo/projetos-geo/ — fornecida como segunda fonte, mas seu conteúdo não pôde ser acessado externamente nesta atualização. Um link foi adicionado; não foram inventados resultados ou imagens atribuídos a esta página.
 
-O registro rastreável de indicadores, imagens WebP e observações está em `assets/data/fontes.json`.
+O registro rastreável de indicadores, imagens do portal e observações está em `assets/data/fontes.json`.
 
 ### Capturas locais e fontes do portal
 
-As **13 capturas fornecidas pelo apresentador** foram incorporadas em `assets/images/capturas/*.webp` e carregadas pelo Reveal.js sob demanda. São imagens reais de aplicações, mapas e painéis, sem solicitação de API key. Os arquivos foram inicialmente convertidos a partir de prévias disponíveis para transferência, com largura entre aproximadamente 230 e 580 pixels; **não são os originais em resolução integral**. Para exibição em projetor grande, recomenda-se substituir cada WebP pela versão da captura original em resolução completa, mantendo os mesmos nomes.
+As **13 capturas fornecidas pelo apresentador** estão na pasta `assets/images/capturas/`, carregadas sob demanda pelo Reveal.js (atributos `data-src`, `loading="lazy"`, `decoding="async"`). A apresentação não baixa todas as imagens ao iniciar; o consumo ocorre conforme a navegação se aproxima de cada slide.
 
-Outros slides ainda referenciam imagens WebP do próprio Portal GeoCanoas por URL HTTPS, com substitutos SVG locais claramente identificados se o servidor externo falhar. Esses SVGs são conceituais e nunca devem ser usados como cartografia oficial.
+Em outubro de 2026, as versões compactadas WebP foram substituídas pelas **imagens de melhor qualidade já existentes no repositório**, em sete pontos: `InfoLote.png`, `InformativoLote.png`, `Historico.png`, `ProjetosAndamento.png`, `DasboardEmpreendimentos.png`, `DashboardEmpreendimentosEstratégicos.jpg` e `EstudoHidrico.png`. Os outros slides continuam usando WebP quando não há arquivo original correspondente no repositório. Todos os mapas permanecem com `object-fit: contain` para preservar texto, escalas e legendas.
+
+O **cabeçalho utiliza exclusivamente os arquivos originais do próprio repositório**, `assets/images/GEOCANOAS_upscaled.webp` e `assets/images/logo_PMC.png`. As duas marcas ficam à esquerda no mesmo grupo institucional: primeiro GeoCanoas, depois Prefeitura de Canoas; o grupo recebe fundo claro discreto para manter o contraste correto também com o tema escuro. Em telas pequenas, o conjunto é redimensionado sem ocultar as logos.
+
+Os recursos do Portal GeoCanoas, que não constam localmente, podem continuar usando imagens WebP oficiais por URL HTTPS, com substitutos SVG locais identificados em caso de indisponibilidade. Esses SVGs são conceituais e nunca devem ser utilizados como cartografia oficial.
 
 **Responsabilidade técnica e temporal:** o estudo de perigo hidráulico TR100 é um cenário modelado com dados AquaProjetos, não a mancha observada de 2024; os valores dos dashboards são os que aparecem nas capturas e não constituem estatística atualizada automaticamente; a “Rua 2” é exemplo hipotético. O zoneamento e a proposta de Lei GeoCanoas devem ser apresentados conforme seu status normativo próprio.
 
@@ -65,7 +69,7 @@ No slide 5, a revelação dos blocos e das setas foi ordenada por `data-fragment
     │   ├── data/
     │   │   └── fontes.json
     │   └── images/
-    │       ├── capturas/      # 13 mapas e screenshots locais em WebP
+    │       ├── capturas/      # capturas oficiais em PNG, JPG e WebP
     │       ├── favicon.svg
     │       ├── mapa-territorio.svg
     │       ├── mapa-cadastro.svg
