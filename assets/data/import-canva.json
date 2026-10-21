@@ -1,0 +1,132 @@
+[
+  {
+    "name": "estudo-hidrico",
+    "url": "https://export-download.canva.com/1977b669-1a04-42b5-8e18-9ba6950f4ae0/0/0001-6254893666582171863.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261020%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261020T222945Z&X-Amz-Expires=63973&X-Amz-Signature=3edccb1fe199cae37dafcdd1ed60dcbc52e1bc2d9638666b8932944b7e6ec85e&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2021%20Oct%202026%2016%3A15%3A58%20GMT",
+    "box": [
+      30,
+      101,
+      1860,
+      879
+    ]
+  },
+  {
+    "name": "app-informativo-lote",
+    "url": "https://export-download.canva.com/df00afb9-37da-4781-aa84-fd764dec690a/0/0002-7827775838292827364.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261021%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261021T125336Z&X-Amz-Expires=10165&X-Amz-Signature=0a96e26bdae37990eaebfb9f668f43f1d6962f2a5b126d6d17c4fb6923eb2292&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2021%20Oct%202026%2015%3A43%3A01%20GMT",
+    "box": [
+      160,
+      30,
+      1600,
+      1020
+    ]
+  },
+  {
+    "name": "pdf-informativo-lote",
+    "url": "https://export-download.canva.com/a625b793-efaf-4bfb-a754-22a962c279bb/0/0003-9155211828080018963.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261021%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261021T004111Z&X-Amz-Expires=55634&X-Amz-Signature=246e164580c05fbe94b73b1622ca394421e2a69ed854480340b46080d82bfc81&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2021%20Oct%202026%2016%3A08%3A25%20GMT",
+    "box": [
+      595,
+      30,
+      731,
+      1020
+    ]
+  },
+  {
+    "name": "historico-cidade",
+    "url": "https://export-download.canva.com/191e65ed-fb7d-4880-838d-bdfed155deda/0/0004-2417826783422202112.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261020%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261020T221733Z&X-Amz-Expires=65182&X-Amz-Signature=2cbb8c21182f5b44521cbca7154ce3398fa77d1b84137c79e3f056b8acafea64&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2021%20Oct%202026%2016%3A23%3A55%20GMT",
+    "box": [
+      268,
+      30,
+      1384,
+      1020
+    ]
+  },
+  {
+    "name": "projetos-andamento",
+    "url": "https://export-download.canva.com/a80311b6-e7b9-435b-9330-4914c14fc896/0/0005-2583334073026524251.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261021%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261021T060340Z&X-Amz-Expires=35785&X-Amz-Signature=e302c7c0c9024021333671c5146bc114d4e2d4ae80c276c48ec844f431732461&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2021%20Oct%202026%2016%3A00%3A05%20GMT",
+    "box": [
+      145,
+      30,
+      1631,
+      1020
+    ]
+  },
+  {
+    "name": "dashboard-empreendimentos",
+    "url": "https://export-download.canva.com/d79c4ced-2e26-4ff7-822b-09709457f112/0/0006-8141901912284182402.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261021%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261021T051004Z&X-Amz-Expires=39239&X-Amz-Signature=d9b65e866ec4cccef85a4e08972c33f52a14e93a7e5d2555cbbde863a6a162b0&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2021%20Oct%202026%2016%3A04%3A03%20GMT",
+    "box": [
+      30,
+      101,
+      1860,
+      878
+    ]
+  },
+  {
+    "name": "dashboard-estrategicos",
+    "url": "https://export-download.canva.com/8576378d-3139-4926-ab7b-35802616b724/0/0007-6140051875365067104.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261021%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261021T112711Z&X-Amz-Expires=15779&X-Amz-Signature=0ad14b2399a0771e4be77191caa2aa5ddfa462147ea18678de5e24c192c872b5&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2021%20Oct%202026%2015%3A50%3A10%20GMT",
+    "box": [
+      30,
+      101,
+      1860,
+      878
+    ]
+  },
+  {
+    "name": "bacias-hidrograficas",
+    "url": "https://export-download.canva.com/8f041560-5911-4030-a8b2-958bf6ae8707/0/0008-3688967777885599114.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261021%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261021T101626Z&X-Amz-Expires=19648&X-Amz-Signature=5de305c2423fa362486d624b3355bdb38ce55ff53e83799e508f76ad3d42b410&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2021%20Oct%202026%2015%3A43%3A54%20GMT",
+    "box": [
+      251,
+      30,
+      1419,
+      1020
+    ]
+  },
+  {
+    "name": "domicilios-coletivos",
+    "url": "https://export-download.canva.com/82b81438-2555-4edb-987a-05d84ef0aa52/0/0009-2385175688374498364.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261021%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261021T090943Z&X-Amz-Expires=26182&X-Amz-Signature=b02152a9f45f201097c37d0c37cd6ac5fc174101eaffb7483090b8e44138b544&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2021%20Oct%202026%2016%3A26%3A05%20GMT",
+    "box": [
+      438,
+      30,
+      1045,
+      1020
+    ]
+  },
+  {
+    "name": "domicilios-particulares",
+    "url": "https://export-download.canva.com/48138fc7-6219-4c89-8284-fff4ec7774cb/0/0010-3229600616430248728.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261020%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261020T200406Z&X-Amz-Expires=71547&X-Amz-Signature=2156fd81af45d8de8954d1169e90f7a913e8abf335b0ca43ad9973bf0a2e87e7&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2021%20Oct%202026%2015%3A56%3A33%20GMT",
+    "box": [
+      446,
+      30,
+      1028,
+      1020
+    ]
+  },
+  {
+    "name": "censo-dashboard",
+    "url": "https://export-download.canva.com/2c76b8e9-5da5-4818-af56-87ba10f05ce7/0/0011-6185087873920572543.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261020%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261020T163032Z&X-Amz-Expires=87116&X-Amz-Signature=e87f97b1acab9734f97cdf1c8c735b689705f23abeebe4c6f29be79d3199e018&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2021%20Oct%202026%2016%3A42%3A28%20GMT",
+    "box": [
+      447,
+      30,
+      1026,
+      1020
+    ]
+  },
+  {
+    "name": "empreendimentos-claro",
+    "url": "https://export-download.canva.com/328d78a3-7d80-4679-8284-7f78cef3b8af/0/0012-1275038380150124392.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261020%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261020T204951Z&X-Amz-Expires=71418&X-Amz-Signature=a9edc33a2b587eeec705c85e4983be796501d64e937a0c8dbd612387999f3e8d&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2021%20Oct%202026%2016%3A40%3A09%20GMT",
+    "box": [
+      30,
+      100,
+      1860,
+      880
+    ]
+  },
+  {
+    "name": "mapa-cadastral",
+    "url": "https://export-download.canva.com/67b2e6cf-4ed4-4e8c-8ab0-fcc1fbe2c26f/0/0013-3670953380241559591.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261020%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261020T154400Z&X-Amz-Expires=89911&X-Amz-Signature=0fde6e1de564873f3a54a80b06776b9b89a0ae5eb6a855c453e8f749c3e4bac4&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2021%20Oct%202026%2016%3A42%3A31%20GMT",
+    "box": [
+      238,
+      30,
+      1445,
+      1020
+    ]
+  }
+]
