@@ -1,0 +1,15 @@
+:root{--bg:#091827;--surface:#13293b;--surface2:#20384b;--fg:#edf4f6;--muted:#a5b7c3;--border:rgba(206,233,241,.17);--accent:#4fe0cc;--shadow:0 23px 60px rgba(0,0,0,.26);--head:'Manrope',Arial,sans-serif;--text:'DM Sans',Arial,sans-serif}
+html[data-theme="light"]{--bg:#f4f7f8;--surface:#fff;--surface2:#e8eff1;--fg:#183043;--muted:#627581;--border:rgba(25,53,67,.17);--accent:#007e84;--shadow:0 15px 45px rgba(30,56,70,.10)}
+html,body{background:var(--bg);color:var(--fg);margin:0;font-family:var(--text);transition:background .25s,color .25s}
+body{overflow:hidden}
+.reveal{color:var(--fg);font-family:var(--text)}
+.reveal .slides{text-align:left}
+.reveal .slides section{box-sizing:border-box}
+.reveal h1,.reveal h2,.reveal h3{color:var(--fg);font-family:var(--head);font-weight:800;line-height:1.09;letter-spacing:-.06em;text-transform:none;text-shadow:none;margin:0}
+.reveal em{font-style:normal;color:var(--accent)}
+.reveal p{line-height:1.5}
+.reveal a{color:inherit;text-decoration:none}
+.reveal .controls{color:var(--accent);right:29px;bottom:20px;z-index:90}
+.reveal .progress{color:var(--accent);height:4px}
+.reveal .slide-number{background:transparent;color:var(--muted);font:700 12px var(--text);bottom:34px;right:132px}
+.reveal .slides section:not([data-background-color]){background:var(--bg)}
