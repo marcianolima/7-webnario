@@ -1,0 +1,70 @@
+name: Import approved webinar screenshots
+on:
+  push:
+    paths:
+      - "assets/data/import-canva.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Pillow
+        run: python -m pip install --quiet Pillow
+      - name: Save screenshots locally as optimized WebP
+        run: |
+          python - <<'PY'
+          import io, json, pathlib, urllib.request
+          from PIL import Image, ImageOps
+          manifest = pathlib.Path("assets/data/import-canva.json")
+          if not manifest.exists():
+              print("Import already completed.")
+              raise SystemExit(0)
+          items = json.loads(manifest.read_text("utf-8"))
+          output = pathlib.Path("assets/images/capturas")
+          output.mkdir(parents=True, exist_ok=True)
+          errors = []
+          for item in items:
+              try:
+                  req = urllib.request.Request(item["url"], headers={"User-Agent":"Mozilla/5.0"})
+                  with urllib.request.urlopen(req, timeout=65) as resp:
+                      data=resp.read()
+                  im = Image.open(io.BytesIO(data)).convert("RGB")
+                  srcw, srch = im.size
+                  box = item["box"]
+                  x1 = round(box[0]*srcw/1920)
+                  y1 = round(box[1]*srch/1080)
+                  x2 = round((box[0]+box[2])*srcw/1920)
+                  y2 = round((box[1]+box[3])*srch/1080)
+                  im = im.crop((x1,y1,x2,y2))
+                  # Conserve original detail while limiting largest images
+                  if im.width > 1840 or im.height > 1100:
+                      im.thumbnail((1840,1100), Image.Resampling.LANCZOS)
+                  dest = output / (item["name"] + ".webp")
+                  im.save(dest, "WEBP", quality=86, method=6)
+                  print(f"{dest}: {im.width}x{im.height}, {dest.stat().st_size} bytes")
+              except Exception as e:
+                  errors.append((item["name"], str(e)))
+          if errors:
+              for name,reason in errors: print("ERROR",name,reason)
+              raise SystemExit(f"{len(errors)} images not downloaded; preserving manifest for retry.")
+          manifest.unlink()
+          PY
+      - name: Commit screenshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets
+          git diff --cached --quiet && exit 0
+          git commit -m "assets: add approved real GeoCanoas screenshots in WebP"
+          git push
