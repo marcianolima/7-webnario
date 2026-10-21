@@ -7,22 +7,32 @@ Apresentação web do GeoCanoas (Prefeitura de Canoas/RS), em **Reveal.js 6.0.2*
 - **Evento:** 21/10/2026 — Geoinformação e Inteligência Urbana
 - **Palestrante:** Marciano da Costa Lima, Engenheiro Cartógrafo, Diretoria do GeoCanoas/SMDU
 
-## Entrega inicial
+## Apresentação atual (25 slides)
 
-São **10 slides de exemplo**, pensados para evoluir em seguida para a apresentação de aproximadamente 40 minutos:
+A apresentação foi ampliada para **25 slides**, com narrativa adequada a cerca de 40 minutos. Os blocos abordam:
 
-1. Capa editorial;
-2. Contextualização territorial com mapa;
-3. Fluxo de dados e arquitetura SIG;
-4. Destaque cartográfico do cadastro;
-5. Comparação lote × zoneamento (com Auto-Animate);
-6. Enchente 2024 e leitura territorial;
-7. Galeria de aplicações com links;
-8. Integração de sistemas e APIs;
-9. Governança e proposta de Lei GeoCanoas;
-10. Encerramento e links.
+- Alcance institucional divulgado pelo GeoCanoas: **+10 anos de geotecnologia, +100 aplicações desenvolvidas e +10 secretarias atendidas**. São informações declaradas no portal, sem auditoria externa.
+- Construção e gestão da base cartográfica, georreferenciamento, integração, infraestrutura de dados e serviços WebGIS.
+- Casos reais **divulgados pelo portal municipal**: Mapa Cadastral, Topográfico, Zoneamento Urbano, Consulta de Viabilidade e Informativo Prévio.
+- Defesa Civil: Pontos de Riscos, Inundação em Canoas e Pluviômetros/Linígrafo.
+- Gestão setorial: Minha Unidade de Saúde, Redes de Ensino Escolar, Ecopontos e equipamentos de segurança.
+- Histórico de imagens, indicadores, processos administrativos, transparência, governança e proposta de Lei GeoCanoas.
+- Encerramento com acesso ao portal municipal, repositório e página de projetos.
 
-**As imagens SVG incluídas são ilustrações conceituais e NÃO mapas oficiais.** Elas foram criadas para validar rapidamente os layouts e manter o funcionamento offline das imagens. A próxima evolução deve substituir essas ilustrações por capturas reais e autorizadas dos aplicativos GeoCanoas, preferencialmente em WebP. Não interpretar geometrias, cores e áreas dos SVGs como dados territoriais reais.
+### Fontes municipais utilizadas
+
+1. **Portal GeoCanoas:** https://sistemas.canoas.rs.gov.br/geo/portal/ — seu conteúdo foi consultado e os indicadores, imagens e exemplos foram selecionados conforme a página.
+2. **Projetos GeoCanoas:** https://sistemas.canoas.rs.gov.br/geo/projetos-geo/ — fornecida como segunda fonte, mas seu conteúdo não pôde ser acessado externamente nesta atualização. Um link foi adicionado; não foram inventados resultados ou imagens atribuídos a esta página.
+
+O registro rastreável de indicadores, imagens WebP e observações está em `assets/data/fontes.json`.
+
+### Como as imagens oficiais funcionam
+
+Os slides das aplicações usam os caminhos **WebP publicados pelo próprio Portal GeoCanoas**, acessados via HTTPS, com `data-src` para lazy loading pelo Reveal.js. Assim, as imagens não são arquivos assinados de expiração curta. **Elas ainda não foram espelhadas no repositório**: a disponibilidade durante a transmissão depende do servidor municipal.
+
+Quando uma imagem do portal falha, o JavaScript exibe uma ilustração SVG local e acrescenta a indicação **"Visual ilustrativo · a imagem do portal está indisponível"**. Os SVGs não representam bases ou fenômenos territoriais reais. Essa salvaguarda evita apresentar mapas inventados como cartografia oficial.
+
+É recomendável baixar previamente as capturas oficiais para `assets/images/*.webp`, com autorização e revisão de dados sensíveis, para remover a dependência do servidor municipal no dia do webinar.
 
 ## Estrutura
 
@@ -38,6 +48,8 @@ São **10 slides de exemplo**, pensados para evoluir em seguida para a apresenta
     ├── js/
     │   └── config.js
     ├── assets/
+    │   ├── data/
+    │   │   └── fontes.json
     │   └── images/
     │       ├── favicon.svg
     │       ├── mapa-territorio.svg
@@ -159,7 +171,7 @@ Exemplo:
       <aside class="notes">Roteiro de fala e tempo previsto.</aside>
     </section>
 
-Layouts existentes:
+Layouts existentes (além dos componentes oficiais adicionados nesta versão):
 - hero: capa;
 - context: grande mapa e indicadores;
 - process: fluxo de etapas;
