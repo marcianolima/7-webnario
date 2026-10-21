@@ -97,3 +97,75 @@ html[data-theme="light"] .hero,html[data-theme="light"] .risk-slide,html[data-th
  .address-variants article small{font-size:13px}
 }
 @media print{.real-image,.real-pair-grid .real-image{box-shadow:none}}
+
+
+/* ---------- Identidade institucional oficial no cabeçalho ---------- */
+/* Logos existentes em assets/images; um suporte neutro garante que o texto
+   escuro da marca municipal permaneça legível em ambos os temas. */
+.topbar{
+  height:80px;
+  gap:22px;
+  padding-inline:clamp(14px,3.8vw,64px);
+}
+.institutional-brand{
+  display:flex;
+  align-items:center;
+  flex:0 0 auto;
+  gap:13px;
+  height:66px;
+  padding:3px 12px 3px 9px;
+  border:1px solid rgba(15,38,54,.15);
+  border-radius:10px;
+  background:#fafbfc;
+  box-shadow:0 2px 14px rgba(0,0,0,.08);
+}
+.institutional-brand__geocanoas,
+.institutional-brand__prefeitura{
+  display:flex;
+  flex:0 0 auto;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  text-decoration:none;
+}
+.institutional-brand__geocanoas{width:172px;height:49px}
+.institutional-brand__prefeitura{width:144px;height:60px}
+.institutional-brand img{width:100%;height:100%;object-fit:contain;display:block}
+.institutional-brand__divider{
+  display:block;
+  height:35px;
+  width:1px;
+  background:#d0d7da;
+  flex:0 0 auto;
+}
+.institutional-brand__geocanoas:focus-visible{
+  outline:3px solid #007e84;
+  outline-offset:3px;
+  border-radius:5px;
+}
+.topbar .toolbar{flex-shrink:0}
+.topbar .edition{white-space:nowrap}
+@media(max-width:1040px){
+  .topbar{height:68px;gap:12px}
+  .institutional-brand{height:55px;gap:10px}
+  .institutional-brand__geocanoas{width:141px;height:39px}
+  .institutional-brand__prefeitura{width:114px;height:50px}
+  .topbar .edition{display:none}
+}
+@media(max-width:650px){
+  .topbar{height:61px;padding-inline:12px}
+  .institutional-brand{height:49px;padding:3px 7px;gap:6px;border-radius:7px}
+  .institutional-brand__geocanoas{width:115px;height:34px}
+  .institutional-brand__prefeitura{width:93px;height:42px}
+  .institutional-brand__divider{height:25px}
+  .topbar .toolbar{gap:7px}
+  .topbar .tool{padding:0 10px;height:33px}
+}
+@media(max-width:385px){
+  .topbar{padding-inline:8px;gap:5px}
+  .institutional-brand{height:43px;gap:4px;padding:2px 5px}
+  .institutional-brand__geocanoas{width:92px;height:30px}
+  .institutional-brand__prefeitura{width:79px;height:37px}
+  .topbar .tool{padding:0 7px}
+  .topbar .toolbar{gap:4px}
+}
