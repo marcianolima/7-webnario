@@ -31,6 +31,27 @@
       img.loading = 'eager';
     });
   }
+
+  // Capturas WebP são servidas pelo Portal GeoCanoas. Não dependemos de
+  // URLs assinadas de expiração curta; fallback local mantém a palestra íntegra.
+  // O slide só recebe o selo 'visual ilustrativo' quando o fallback foi ativado.
+  document.addEventListener('error', event => {
+    const img = event.target;
+    if (!(img instanceof HTMLImageElement)) return;
+    const fallback = img.dataset.fallback;
+    if (!fallback || img.dataset.fallbackUsed === '1') return;
+    img.dataset.fallbackUsed = '1';
+    img.closest('.official-photo')?.setAttribute('data-image-state', 'fallback');
+    img.src = fallback;
+  }, true);
+  document.addEventListener('load', event => {
+    const img = event.target;
+    if (!(img instanceof HTMLImageElement)) return;
+    if (img.dataset.fallback && img.dataset.fallbackUsed !== '1') {
+      img.closest('.official-photo')?.setAttribute('data-image-state','official');
+    }
+  }, true);
+
   Reveal.initialize({
     width: 1600, height: 900, margin: 0, minScale: 0.12, maxScale: 1.6,
     scrollActivationWidth: 800, scrollProgress: 'auto',
