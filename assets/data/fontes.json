@@ -1,0 +1,144 @@
+{
+  "version": "1.0",
+  "collected_at": "2026-10-20",
+  "purpose": "Rastreabilidade de indicadores e imagens citados nos slides da palestra",
+  "sources": {
+    "portal": {
+      "url": "https://sistemas.canoas.rs.gov.br/geo/portal/",
+      "access": "conteúdo textual consultado",
+      "description": "Portal GeoCanoas: serviços, aplicações e informações institucionais"
+    },
+    "projetos": {
+      "url": "https://sistemas.canoas.rs.gov.br/geo/projetos-geo/",
+      "access": "não foi possível validar externamente nesta atualização",
+      "description": "Página de projetos fornecida pelo usuário; não utilizar como evidência de entregas sem validação"
+    }
+  },
+  "institutional_claims": [
+    {
+      "display": "+10 anos",
+      "meaning": "de geotecnologia",
+      "source": "portal",
+      "verification": "alegação institucional da página, sem auditoria independente"
+    },
+    {
+      "display": "+100 aplicações",
+      "meaning": "desenvolvidas",
+      "source": "portal",
+      "verification": "alegação institucional da página, sem lista auditada nesta atualização"
+    },
+    {
+      "display": "+10 secretarias",
+      "meaning": "atendidas",
+      "source": "portal",
+      "verification": "alegação institucional da página, sem detalhamento do indicador"
+    }
+  ],
+  "images": [
+    {
+      "subject": "mapa cadastral",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/AplicacoesDestaque/aplicacao_destaque.webp",
+      "fallback": "assets/images/mapa-cadastro.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    },
+    {
+      "subject": "zoneamento urbano",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/AplicacoesDestaque/aplicacao_destaque3.webp",
+      "fallback": "assets/images/mapa-zoneamento.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    },
+    {
+      "subject": "consulte a viabilidade",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/AplicacoesDestaque/aplicacao_destaque4.webp",
+      "fallback": "assets/images/mapa-zoneamento.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    },
+    {
+      "subject": "informativo prévio",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/AplicacoesDestaque/aplicacao_destaque5.webp",
+      "fallback": "assets/images/mapa-cadastro.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    },
+    {
+      "subject": "topográfico",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/DesUrbano/aplicacao_desenurbano4.webp",
+      "fallback": "assets/images/mapa-territorio.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    },
+    {
+      "subject": "pontos de risco",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/DefCivil/aplicacao_defcivil1.webp",
+      "fallback": "assets/images/mapa-inundacao.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    },
+    {
+      "subject": "pluviômetros e linígrafo",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/DefCivil/aplicacao_defcivil2.webp",
+      "fallback": "assets/images/mapa-inundacao.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    },
+    {
+      "subject": "inundação em Canoas",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/DefCivil/aplicacao_defcivil3.webp",
+      "fallback": "assets/images/mapa-inundacao.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    },
+    {
+      "subject": "ecopontos e reciclagem",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/MeioAmbiente/aplicacao_meioambiente4.webp",
+      "fallback": "assets/images/mapa-indicadores.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    },
+    {
+      "subject": "minha unidade de saúde",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/Saude/aplicacao_saude1.webp",
+      "fallback": "assets/images/mapa-indicadores.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    },
+    {
+      "subject": "redes de ensino escolar",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/Educacao/aplicacao_educacao1.webp",
+      "fallback": "assets/images/mapa-indicadores.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    },
+    {
+      "subject": "câmeras de monitoramento",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/SegurancaPublica/aplicacao_seguranca1.webp",
+      "fallback": "assets/images/mapa-indicadores.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    },
+    {
+      "subject": "histórico de imagens",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/Informa%C3%A7%C3%B5es/historico_imagens.webp",
+      "fallback": "assets/images/mapa-territorio.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    },
+    {
+      "subject": "indicadores",
+      "source": "portal",
+      "src": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/Informa%C3%A7%C3%B5es/indicadores_img.webp",
+      "fallback": "assets/images/mapa-indicadores.svg",
+      "storage": "remoto no domínio municipal com fallback local SVG; não foi possível espelhar a imagem com acesso externo"
+    }
+  ],
+  "usage_notes": [
+    "Os números institucionais são divulgados pelo próprio portal, não verificados independentemente.",
+    "Imagens externas podem falhar quando o servidor municipal está indisponível; o fallback local nunca representa dados oficiais.",
+    "A seção Loteamentos no site contém descrição aparentemente repetida de Topográfico; não usar esse texto como prova de conteúdo da aplicação.",
+    "O portal afirma explicitamente que o mapa cadastral é informativo, não comprova propriedade ou limites legais de domínio.",
+    "O texto da página projetos-geo não foi consultado; não inferir entregas nem métricas dessa fonte."
+  ]
+}
