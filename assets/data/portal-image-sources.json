@@ -1,0 +1,42 @@
+[
+  {
+    "name": "mapa-cadastral",
+    "url": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/AplicacoesDestaque/aplicacao_destaque.webp"
+  },
+  {
+    "name": "consulta-viabilidade",
+    "url": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/AplicacoesDestaque/aplicacao_destaque4.webp"
+  },
+  {
+    "name": "rede-topografica",
+    "url": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/DesUrbano/aplicacao_desenurbano4.webp"
+  },
+  {
+    "name": "pontos-risco",
+    "url": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/DefCivil/aplicacao_defcivil1.webp"
+  },
+  {
+    "name": "inundacao-canoas",
+    "url": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/DefCivil/aplicacao_defcivil3.webp"
+  },
+  {
+    "name": "pluviometros-linigrafo",
+    "url": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/DefCivil/aplicacao_defcivil2.webp"
+  },
+  {
+    "name": "minha-unidade-saude",
+    "url": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/Saude/aplicacao_saude1.webp"
+  },
+  {
+    "name": "redes-ensino",
+    "url": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/Educacao/aplicacao_educacao1.webp"
+  },
+  {
+    "name": "ecopontos",
+    "url": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/MeioAmbiente/aplicacao_meioambiente4.webp"
+  },
+  {
+    "name": "cameras-monitoramento",
+    "url": "https://sistemas.canoas.rs.gov.br/geo/portal/assets/img/portfolio/SegurancaPublica/aplicacao_seguranca1.webp"
+  }
+]
