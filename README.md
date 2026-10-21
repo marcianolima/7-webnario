@@ -7,15 +7,17 @@ Apresentação web do GeoCanoas (Prefeitura de Canoas/RS), em **Reveal.js 6.0.2*
 - **Evento:** 21/10/2026 — Geoinformação e Inteligência Urbana
 - **Palestrante:** Marciano da Costa Lima, Engenheiro Cartógrafo, Diretoria do GeoCanoas/SMDU
 
-## Apresentação atual (25 slides)
+## Apresentação atual (33 slides)
 
-A apresentação foi ampliada para **25 slides**, com narrativa adequada a cerca de 40 minutos. Os blocos abordam:
+A apresentação foi reorganizada em **33 slides**, planejados para aproximadamente 40 minutos. Cada um tem notas para a pessoa apresentadora. Os blocos abordam:
 
 - Alcance institucional divulgado pelo GeoCanoas: **+10 anos de geotecnologia, +100 aplicações desenvolvidas e +10 secretarias atendidas**. São informações declaradas no portal, sem auditoria externa.
 - Construção e gestão da base cartográfica, georreferenciamento, integração, infraestrutura de dados e serviços WebGIS.
 - Casos reais **divulgados pelo portal municipal**: Mapa Cadastral, Topográfico, Zoneamento Urbano, Consulta de Viabilidade e Informativo Prévio.
 - Defesa Civil: Pontos de Riscos, Inundação em Canoas e Pluviômetros/Linígrafo.
 - Gestão setorial: Minha Unidade de Saúde, Redes de Ensino Escolar, Ecopontos e equipamentos de segurança.
+- **13 capturas reais enviadas para este webinar**, incorporadas em arquivos WebP locais: mapa cadastral (16/10/2026), PDUA/zoneamento, aplicativo e PDF de Informativo de Lote, comparador temporal 1973–2018, estudo de perigo hidráulico com dados AquaProjetos, bacias hidrográficas, projetos em andamento, dois dashboards de empreendimentos, dashboard do Censo 2022 e mapas de domicílios particulares e coletivos.
+- Exemplo ilustrativo de **endereçamento ambíguo — “Rua 2”**: divergências entre nome oficial, uso local e provedores externos, reforçando a necessidade de padronização.
 - Histórico de imagens, indicadores, processos administrativos, transparência, governança e proposta de Lei GeoCanoas.
 - Encerramento com acesso ao portal municipal, repositório e página de projetos.
 
@@ -26,13 +28,25 @@ A apresentação foi ampliada para **25 slides**, com narrativa adequada a cerca
 
 O registro rastreável de indicadores, imagens WebP e observações está em `assets/data/fontes.json`.
 
-### Como as imagens oficiais funcionam
+### Capturas locais e fontes do portal
 
-Os slides das aplicações usam os caminhos **WebP publicados pelo próprio Portal GeoCanoas**, acessados via HTTPS, com `data-src` para lazy loading pelo Reveal.js. Assim, as imagens não são arquivos assinados de expiração curta. **Elas ainda não foram espelhadas no repositório**: a disponibilidade durante a transmissão depende do servidor municipal.
+As **13 capturas fornecidas pelo apresentador** foram incorporadas em `assets/images/capturas/*.webp` e carregadas pelo Reveal.js sob demanda. São imagens reais de aplicações, mapas e painéis, sem solicitação de API key. Os arquivos foram inicialmente convertidos a partir de prévias disponíveis para transferência, com largura entre aproximadamente 230 e 580 pixels; **não são os originais em resolução integral**. Para exibição em projetor grande, recomenda-se substituir cada WebP pela versão da captura original em resolução completa, mantendo os mesmos nomes.
 
-Quando uma imagem do portal falha, o JavaScript exibe uma ilustração SVG local e acrescenta a indicação **"Visual ilustrativo · a imagem do portal está indisponível"**. Os SVGs não representam bases ou fenômenos territoriais reais. Essa salvaguarda evita apresentar mapas inventados como cartografia oficial.
+Outros slides ainda referenciam imagens WebP do próprio Portal GeoCanoas por URL HTTPS, com substitutos SVG locais claramente identificados se o servidor externo falhar. Esses SVGs são conceituais e nunca devem ser usados como cartografia oficial.
 
-É recomendável baixar previamente as capturas oficiais para `assets/images/*.webp`, com autorização e revisão de dados sensíveis, para remover a dependência do servidor municipal no dia do webinar.
+**Responsabilidade técnica e temporal:** o estudo de perigo hidráulico TR100 é um cenário modelado com dados AquaProjetos, não a mancha observada de 2024; os valores dos dashboards são os que aparecem nas capturas e não constituem estatística atualizada automaticamente; a “Rua 2” é exemplo hipotético. O zoneamento e a proposta de Lei GeoCanoas devem ser apresentados conforme seu status normativo próprio.
+
+### Ordenação e destaques
+
+- Slides 1–5: abertura, indicadores institucionais, desafios e arquitetura;
+- **Slide 6:** mapa cadastral real enviado em `Captura de tela 2026-10-16 132658.png`;
+- Sequência seguinte: base cartográfica, endereçamento, viabilidade e **apoio técnico ao PDUA**;
+- Informativo de Lote: aplicativo e documento emitido;
+- Evolução urbana, bacias e **estudo de perigo hidráulico**;
+- Projetos em andamento, dashboards de empreendimentos e **Censo 2022**;
+- Aplicações setoriais, integração de processos, governança e encerramento.
+
+No slide 5, a revelação dos blocos e das setas foi ordenada por `data-fragment-index`: a seta aparece **após** a etapa que a antecede.
 
 ## Estrutura
 
@@ -51,6 +65,7 @@ Quando uma imagem do portal falha, o JavaScript exibe uma ilustração SVG local
     │   ├── data/
     │   │   └── fontes.json
     │   └── images/
+    │       ├── capturas/      # 13 mapas e screenshots locais em WebP
     │       ├── favicon.svg
     │       ├── mapa-territorio.svg
     │       ├── mapa-cadastro.svg
