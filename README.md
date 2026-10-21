@@ -7,16 +7,16 @@ Apresentação web do GeoCanoas (Prefeitura de Canoas/RS), em **Reveal.js 6.0.2*
 - **Evento:** 21/10/2026 — Geoinformação e Inteligência Urbana
 - **Palestrante:** Marciano da Costa Lima, Engenheiro Cartógrafo, Diretoria do GeoCanoas/SMDU
 
-## Apresentação atual (33 slides)
+## Apresentação atual (32 slides)
 
-A apresentação foi reorganizada em **33 slides**, planejados para aproximadamente 40 minutos. Cada um tem notas para a pessoa apresentadora. Os blocos abordam:
+A apresentação foi reorganizada em **32 slides**, planejados para aproximadamente 40 minutos. Cada um tem notas para a pessoa apresentadora. Os blocos abordam:
 
 - Alcance institucional divulgado pelo GeoCanoas: **+10 anos de geotecnologia, +100 aplicações desenvolvidas e +10 secretarias atendidas**. São informações declaradas no portal, sem auditoria externa.
 - Construção e gestão da base cartográfica, georreferenciamento, integração, infraestrutura de dados e serviços WebGIS.
 - Casos reais **divulgados pelo portal municipal**: Mapa Cadastral, Topográfico, Zoneamento Urbano, Consulta de Viabilidade e Informativo Prévio.
 - Defesa Civil: Pontos de Riscos, Inundação em Canoas e Pluviômetros/Linígrafo.
 - Gestão setorial: Minha Unidade de Saúde, Redes de Ensino Escolar, Ecopontos e equipamentos de segurança.
-- **13 capturas reais enviadas para este webinar**, incorporadas em arquivos locais (PNG, JPEG e WebP, conforme a melhor versão disponível): mapa cadastral (16/10/2026), PDUA/zoneamento, aplicativo e PDF de Informativo de Lote, comparador temporal 1973–2018, estudo de perigo hidráulico com dados AquaProjetos, bacias hidrográficas, projetos em andamento, dois dashboards de empreendimentos, dashboard do Censo 2022 e mapas de domicílios particulares e coletivos.
+- **13 capturas reais enviadas para este webinar**, incorporadas em arquivos locais (PNG, JPEG e WebP, conforme a melhor versão disponível): mapa cadastral (16/10/2026), PDUA/zoneamento, aplicativo e PDF de Informativo de Lote, comparador temporal 1973–2018, estudo de perigo hidráulico com dados AquaProjetos, bacias hidrográficas, projetos em andamento, um dashboard de empreendimentos, dashboard do Censo 2022 e mapas de domicílios particulares e coletivos.
 - Exemplo ilustrativo de **endereçamento ambíguo — “Rua 2”**: divergências entre nome oficial, uso local e provedores externos, reforçando a necessidade de padronização.
 - Histórico de imagens, indicadores, processos administrativos, transparência, governança e proposta de Lei GeoCanoas.
 - Encerramento com acesso ao portal municipal, repositório e página de projetos.
@@ -32,7 +32,7 @@ O registro rastreável de indicadores, imagens do portal e observações está e
 
 As **13 capturas fornecidas pelo apresentador** estão na pasta `assets/images/capturas/`, carregadas sob demanda pelo Reveal.js (atributos `data-src`, `loading="lazy"`, `decoding="async"`). A apresentação não baixa todas as imagens ao iniciar; o consumo ocorre conforme a navegação se aproxima de cada slide.
 
-Em outubro de 2026, as versões compactadas WebP foram substituídas pelas **imagens de melhor qualidade já existentes no repositório**, em sete pontos: `InfoLote.png`, `InformativoLote.png`, `Historico.png`, `ProjetosAndamento.png`, `DasboardEmpreendimentos.png`, `DashboardEmpreendimentosEstratégicos.jpg` e `EstudoHidrico.png`. Os outros slides continuam usando WebP quando não há arquivo original correspondente no repositório. Todos os mapas permanecem com `object-fit: contain` para preservar texto, escalas e legendas.
+Em outubro de 2026, as versões compactadas WebP foram substituídas pelas **imagens de melhor qualidade já existentes no repositório**, em sete pontos: `InfoLote.png`, `InformativoLote.png`, `Historico.png`, `ProjetosAndamento.png`, `DasboardEmpreendimentos.png` e `EstudoHidrico.png`. Os outros slides continuam usando WebP quando não há arquivo original correspondente no repositório. Todos os mapas permanecem com `object-fit: contain` para preservar texto, escalas e legendas.
 
 O **cabeçalho utiliza exclusivamente os arquivos originais do próprio repositório**, `assets/images/GEOCANOAS_upscaled.webp` e `assets/images/logo_PMC.png`. As duas marcas ficam à esquerda no mesmo grupo institucional: primeiro GeoCanoas, depois Prefeitura de Canoas; o grupo recebe fundo claro discreto para manter o contraste correto também com o tema escuro. Em telas pequenas, o conjunto é redimensionado sem ocultar as logos.
 
@@ -55,7 +55,7 @@ O download conserva as imagens do portal em WebP de alta qualidade (88) com dime
 - Sequência seguinte: base cartográfica, endereçamento, viabilidade e **apoio técnico ao PDUA**;
 - Informativo de Lote: aplicativo e documento emitido;
 - Evolução urbana, bacias e **estudo de perigo hidráulico**;
-- Projetos em andamento, dashboards de empreendimentos e **Censo 2022**;
+- Projetos em andamento, dashboard de empreendimentos e **Censo 2022**;
 - Aplicações setoriais, integração de processos, governança e encerramento.
 
 No slide 5, a revelação dos blocos e das setas foi ordenada por `data-fragment-index`: a seta aparece **após** a etapa que a antecede.
