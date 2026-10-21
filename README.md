@@ -36,7 +36,15 @@ Em outubro de 2026, as versões compactadas WebP foram substituídas pelas **ima
 
 O **cabeçalho utiliza exclusivamente os arquivos originais do próprio repositório**, `assets/images/GEOCANOAS_upscaled.webp` e `assets/images/logo_PMC.png`. As duas marcas ficam à esquerda no mesmo grupo institucional: primeiro GeoCanoas, depois Prefeitura de Canoas; o grupo recebe fundo claro discreto para manter o contraste correto também com o tema escuro. Em telas pequenas, o conjunto é redimensionado sem ocultar as logos.
 
-Os recursos do Portal GeoCanoas, que não constam localmente, podem continuar usando imagens WebP oficiais por URL HTTPS, com substitutos SVG locais identificados em caso de indisponibilidade. Esses SVGs são conceituais e nunca devem ser utilizados como cartografia oficial.
+As **10 imagens que eram carregadas diretamente do Portal GeoCanoas** foram recuperadas (HTTP 200, imagens válidas), armazenadas em `assets/images/portal/*.webp` e agora são referenciadas localmente por `index.html`. A palestra não depende mais da disponibilidade do servidor municipal para renderizar essas imagens. As fontes originais permanecem documentadas nos registros abaixo.
+
+- `assets/data/portal-image-sources.json`: URL de origem de cada arquivo;
+- `assets/data/portal-image-download-report.json`: resultado da transferência, dimensões e tamanho;
+- `.github/workflows/import-portal-images.yml`: rotina reutilizável para atualizar as cópias, caso os arquivos de origem sejam modificados no futuro.
+
+O download conserva as imagens do portal em WebP de alta qualidade (88) com dimensões próximas de 1900 px de largura, entre aproximadamente 158 KB e 532 KB. Os mapas enviados manualmente pelo apresentador, como `territorio.png`, `mancha.png` e `capturas/mapa-cadastral-ortofoto.png`, foram preservados e continuam sendo usados.
+
+**Dependências externas que permanecem:** somente recursos de interface de terceiros (biblioteca Reveal.js e fontes do Google Fonts), além dos links clicáveis para sistemas e fontes. Nenhuma imagem de slide usa URL de outro site.
 
 **Responsabilidade técnica e temporal:** o estudo de perigo hidráulico TR100 é um cenário modelado com dados AquaProjetos, não a mancha observada de 2024; os valores dos dashboards são os que aparecem nas capturas e não constituem estatística atualizada automaticamente; a “Rua 2” é exemplo hipotético. O zoneamento e a proposta de Lei GeoCanoas devem ser apresentados conforme seu status normativo próprio.
 
@@ -69,6 +77,7 @@ No slide 5, a revelação dos blocos e das setas foi ordenada por `data-fragment
     │   ├── data/
     │   │   └── fontes.json
     │   └── images/
+    │       ├── portal/        # 10 imagens originais do portal, armazenadas localmente
     │       ├── capturas/      # capturas oficiais em PNG, JPG e WebP
     │       ├── favicon.svg
     │       ├── mapa-territorio.svg
